@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarva TV - Premium IPTV Player</title>
+  <meta name="description" content="Sarva TV - IPTV Player is a premium, lightweight, and ad-free media player shell. Load custom M3U playlists and stream securely across mobile, tablet, and TV.">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- HLS.js for stream sandbox -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+
+  <!-- Glow Background Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <i data-lucide="play" fill="currentColor"></i>
+        </div>
+        Sarva <span>TV</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How it Works</a>
+        <a href="#sandbox" class="nav-link">Stream Sandbox</a>
+        <a href="#support" class="nav-link">Support</a>
+        <a href="#download" class="btn btn-accent" style="padding: 8px 16px; font-size: 14px;">Download App</a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">Universal IPTV Player</div>
+          <h1 class="hero-title">
+            Sarva TV<br><span>IPTV Player</span>
+          </h1>
+          <p class="hero-desc">
+            The premium player for your playlists. Experience hardware-accelerated, zero-ad streaming with fluid animations, picture-in-picture, and full D-pad optimization for Smart TVs.
+          </p>
+          <div class="hero-btns" id="download">
+            <!-- App Store Badge -->
+            <a href="https://github.com/sarvacapitalin/sarva-tv-feedback" class="store-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,22C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.1,16.67C20.08,16.74 19.67,18.11 18.71,19.5M15.97,4.17C16.63,3.37 17.07,2.28 16.95,1C16,1.04 14.9,1.6 14.24,2.38C13.68,3.04 13.19,4.14 13.34,5.39C14.39,5.47 15.4,4.88 15.97,4.17Z"/>
+              </svg>
+              <div class="store-btn-text">
+                <span>Coming Soon on</span>
+                <span>App Store</span>
+              </div>
+            </a>
+            <!-- Play Store Badge -->
+            <a href="https://github.com/sarvacapitalin/sarva-tv-feedback" class="store-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3,5.27V18.73L16.55,12L3,5.27M17.87,11.33L19.43,12.11L17.87,12.89L3.89,19.88L16.55,12L3.89,4.12L17.87,11.33M20.21,11.72C20.43,11.83 20.43,12.17 20.21,12.28L18.65,13.06L17.87,12L18.65,10.94L20.21,11.72Z"/>
+              </svg>
+              <div class="store-btn-text">
+                <span>Coming Soon on</span>
+                <span>Google Play</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="device-showcase">
+          <div class="device-glow"></div>
+          <div class="device-container">
+            <div class="device-notch"></div>
+            <!-- Showcase Image Logo Glow -->
+            <img src="assets/logo-glow.png" alt="Sarva TV App Splash Screen" class="device-screen-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="container">
+    <div class="section-header">
+      <div class="hero-pill" style="align-self: center;">Premium Features</div>
+      <h2 class="section-title">Designed for Clean Playback</h2>
+      <p class="section-subtitle">Sarva TV is optimized to deliver high-performance rendering for all your stream feeds.</p>
+    </div>
+
+    <div class="features-grid">
+      <!-- Feature 1 -->
+      <div class="glass-panel feature-card">
+        <div class="feature-icon">
+          <i data-lucide="folder-open"></i>
+        </div>
+        <h3 class="feature-name">Custom Playlists</h3>
+        <p class="feature-desc">Easily import your own M3U or M3U8 streaming link indexes to manage and play your favorite channels in one place.</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="glass-panel feature-card">
+        <div class="feature-icon">
+          <i data-lucide="zap"></i>
+        </div>
+        <h3 class="feature-name">Hardware Streaming</h3>
+        <p class="feature-desc">Leverages native platform decoders (AVPlayer and ExoPlayer) ensuring low latency, smooth framing, and minimal battery drain.</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="glass-panel feature-card">
+        <div class="feature-icon">
+          <i data-lucide="tv"></i>
+        </div>
+        <h3 class="feature-name">Smart TV UI</h3>
+        <p class="feature-desc">Engineered for big screens with fully mapped D-pad remote focus, scaling ratios, and CRT/LED overscan safe-areas.</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="glass-panel feature-card">
+        <div class="feature-icon">
+          <i data-lucide="eye-off"></i>
+        </div>
+        <h3 class="feature-name">No Ad Clutter</h3>
+        <p class="feature-desc">A focus-centered design that avoids video overlay banners, popups, or user-tracking pixels.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Simulator Section -->
+  <section id="how-it-works" class="container" style="border-top: 1px solid var(--border-color);">
+    <div class="section-header">
+      <div class="hero-pill" style="align-self: center;">App walkthrough</div>
+      <h2 class="section-title">Experience the Interface</h2>
+      <p class="section-subtitle">Take a interactive tour of how the client interface operates step-by-step.</p>
+    </div>
+
+    <div class="simulator-layout">
+      <!-- Step Controls -->
+      <div class="sim-controls">
+        <!-- Step 1 -->
+        <button class="sim-step active" data-screen="screen-lang" aria-label="Step 1: Set Preferences">
+          <div class="sim-step-num">Step 01</div>
+          <h3 class="sim-step-title">Configure Preferences</h3>
+          <p class="sim-step-desc">On first launch, select the regional languages you understand. The app filters out channels outside these preferences, keeping your guide clean.</p>
+        </button>
+
+        <!-- Step 2 -->
+        <button class="sim-step" data-screen="screen-browse" aria-label="Step 2: Browse Content">
+          <div class="sim-step-num">Step 02</div>
+          <h3 class="sim-step-title">Explore & Search</h3>
+          <p class="sim-step-desc">Browse channels organized by category chips (News, Movies, Religious, etc.) or search instantly for channel names.</p>
+        </button>
+
+        <!-- Step 3 -->
+        <button class="sim-step" data-screen="screen-play" aria-label="Step 3: Play Stream">
+          <div class="sim-step-num">Step 03</div>
+          <h3 class="sim-step-title">Powerful Playback</h3>
+          <p class="sim-step-desc">Enjoy full HLS player features including ratio configuration (Fit, Fill, Zoom), toggle muting, sharing streams, and picture-in-picture mode.</p>
+        </button>
+      </div>
+
+      <!-- Mockup Device Frame -->
+      <div class="phone-mockup">
+        <div class="device-glow"></div>
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            
+            <!-- CSS App Screen 1: Languages selection -->
+            <div class="mock-app active" id="screen-lang">
+              <div class="mock-status-bar">
+                <span>09:41</span>
+                <div>
+                  <i data-lucide="signal" style="width:12px; height:12px;"></i>
+                  <i data-lucide="wifi" style="width:12px; height:12px;"></i>
+                </div>
+              </div>
+              <div class="mock-header">
+                <i data-lucide="languages" style="width:16px; height:16px;"></i>
+                <span>Language Wizard</span>
+              </div>
+              <div class="mock-content">
+                <div class="mock-lang-title">Choose Preferred Languages</div>
+                <div class="mock-lang-desc">Channels from these languages will populate your home feed.</div>
+                
+                <div class="mock-lang-grid">
+                  <div class="mock-lang-tile selected">English <span style="font-size:8px; display:block; color:var(--accent);">Active</span></div>
+                  <div class="mock-lang-tile selected">Hindi <span style="font-size:8px; display:block; color:var(--accent);">Active</span></div>
+                  <div class="mock-lang-tile">Tamil</div>
+                  <div class="mock-lang-tile">Telugu</div>
+                  <div class="mock-lang-tile">Malayalam</div>
+                  <div class="mock-lang-tile">Bengali</div>
+                </div>
+
+                <button class="mock-btn-bottom">Start Watching</button>
+              </div>
+            </div>
+
+            <!-- CSS App Screen 2: Browse Content -->
+            <div class="mock-app" id="screen-browse">
+              <div class="mock-status-bar">
+                <span>09:41</span>
+                <div>
+                  <i data-lucide="signal" style="width:12px; height:12px;"></i>
+                  <i data-lucide="wifi" style="width:12px; height:12px;"></i>
+                </div>
+              </div>
+              <div class="mock-header">
+                <i data-lucide="tv" style="width:16px; height:16px;"></i>
+                <span>Sarva TV</span>
+              </div>
+              <div class="mock-content">
+                <div class="mock-search-box">
+                  <i data-lucide="search" style="width:12px; height:12px;"></i>
+                  <span>Search channel...</span>
+                </div>
+                
+                <div class="mock-category-bar">
+                  <div class="mock-chip active">All</div>
+                  <div class="mock-chip">News</div>
+                  <div class="mock-chip">Movies</div>
+                  <div class="mock-chip">Music</div>
+                  <div class="mock-chip">Religious</div>
+                </div>
+
+                <div class="mock-grid">
+                  <div class="mock-card">
+                    <div class="mock-logo-box">GLOBAL NEWS</div>
+                    <div class="mock-card-name">Global News</div>
+                    <div class="mock-card-meta">English | News</div>
+                  </div>
+                  <div class="mock-card">
+                    <div class="mock-logo-box" style="color:var(--primary);">CINEMA HD</div>
+                    <div class="mock-card-name">Cinema HD</div>
+                    <div class="mock-card-meta">Hindi | Movies</div>
+                  </div>
+                  <div class="mock-card">
+                    <div class="mock-logo-box">MUSIC TV</div>
+                    <div class="mock-card-name">Music TV</div>
+                    <div class="mock-card-meta">English | Music</div>
+                  </div>
+                  <div class="mock-card">
+                    <div class="mock-logo-box">DIVINE</div>
+                    <div class="mock-card-name">Divine TV</div>
+                    <div class="mock-card-meta">Hindi | Religious</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mock-footer">
+                <div class="mock-footer-item active">
+                  <i data-lucide="home" style="width:16px; height:16px;"></i>
+                  <span style="font-size:8px;">Home</span>
+                </div>
+                <div class="mock-footer-item">
+                  <i data-lucide="heart" style="width:16px; height:16px;"></i>
+                  <span style="font-size:8px;">Favorites</span>
+                </div>
+                <div class="mock-footer-item">
+                  <i data-lucide="settings" style="width:16px; height:16px;"></i>
+                  <span style="font-size:8px;">Settings</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- CSS App Screen 3: Powerful Playback -->
+            <div class="mock-app" id="screen-play">
+              <div class="mock-status-bar">
+                <span>09:41</span>
+                <div>
+                  <i data-lucide="signal" style="width:12px; height:12px;"></i>
+                  <i data-lucide="wifi" style="width:12px; height:12px;"></i>
+                </div>
+              </div>
+              <div class="mock-content" style="padding: 10px;">
+                <div class="mock-player-box">
+                  <i data-lucide="play" style="width:36px; height:36px; color:rgba(255,255,255,0.7);"></i>
+                  <div class="mock-player-controls">
+                    <i data-lucide="play" style="width:12px; height:12px;"></i>
+                    <span style="font-size:8px;">00:00 / LIVE</span>
+                    <i data-lucide="maximize" style="width:12px; height:12px;"></i>
+                  </div>
+                </div>
+
+                <div class="mock-player-info">
+                  <div class="mock-player-title">Global News HD</div>
+                  <div class="mock-player-meta">
+                    <span class="mock-pill">English</span>
+                    <span class="mock-pill cat">News</span>
+                  </div>
+                  <p class="mock-player-desc">
+                    Live global news broadcast feed. Sourced directly from public streams. Low latency, hardware-decoded.
+                  </p>
+                </div>
+              </div>
+              <div class="mock-footer">
+                <div class="mock-footer-item active">
+                  <i data-lucide="home" style="width:16px; height:16px;"></i>
+                  <span style="font-size:8px;">Home</span>
+                </div>
+                <div class="mock-footer-item">
+                  <i data-lucide="heart" style="width:16px; height:16px;"></i>
+                  <span style="font-size:8px;">Favorites</span>
+                </div>
+                <div class="mock-footer-item">
+                  <i data-lucide="settings" style="width:16px; height:16px;"></i>
+                  <span style="font-size:8px;">Settings</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Sandbox Player Section -->
+  <section id="sandbox" class="container" style="border-top: 1px solid var(--border-color);">
+    <div class="section-header">
+      <div class="hero-pill" style="align-self: center;">Live test sandbox</div>
+      <h2 class="section-title">Stream Engine Sandbox</h2>
+      <p class="section-subtitle">Verify rendering compatibility by pasting a custom M3U8 link, or try a sample stream feed.</p>
+    </div>
+
+    <div class="glass-panel sandbox-card">
+      <div class="sandbox-grid">
+        <!-- Embedded Video Player Screen -->
+        <div class="sandbox-player-container">
+          <!-- Loading overlay -->
+          <div class="sandbox-loader" id="sandbox-loader">
+            <div class="spinner"></div>
+            <span style="font-size: 13px; color: var(--text-secondary);">Connecting Sandbox Stream...</span>
+          </div>
+
+          <!-- Video element -->
+          <video class="sandbox-video" id="sandbox-video" playsinline muted></video>
+
+          <!-- Custom Player controls -->
+          <div class="sandbox-controls-overlay">
+            <button class="player-ctrl-btn" id="btn-play" title="Play/Pause">
+              <i data-lucide="pause" style="width:16px; height:16px;"></i>
+            </button>
+            <div class="player-right-ctrls">
+              <button class="player-ctrl-btn" id="btn-mute" title="Toggle Mute">
+                <i data-lucide="volume-x" style="width:16px; height:16px;"></i>
+              </button>
+              <button class="player-ctrl-btn" id="btn-ratio" title="Aspect Ratio: Fit">
+                <i data-lucide="maximize-2" style="width:16px; height:16px;"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls box -->
+        <div class="sandbox-input-box">
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <label for="stream-url-input" style="font-family:var(--font-display); font-weight:700; font-size:16px;">Paste Stream Link</label>
+            <span style="font-size:13px; color:var(--text-secondary);">Test custom live streams directly in the client renderer shell.</span>
+          </div>
+
+          <div class="sandbox-input-container">
+            <input type="text" id="stream-url-input" class="sandbox-input" placeholder="https://example.com/stream/index.m3u8">
+            <button class="btn btn-primary" id="btn-load-stream" style="padding:14px 20px;">Load Link</button>
+          </div>
+          <div class="error-msg" id="sandbox-error-msg"></div>
+
+          <!-- Presets -->
+          <div class="sandbox-presets">
+            <span class="preset-label">Safe Demo Presets</span>
+            <div class="preset-btn-row">
+              <button class="preset-btn" data-preset="test">Tears of Steel Loop</button>
+              <button class="preset-btn" data-preset="bbb">BipBop Test Feed</button>
+              <button class="preset-btn" data-preset="apple">Apple Advanced fMP4</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support & Feedback Hub Section -->
+  <section id="support" class="container" style="border-top: 1px solid var(--border-color);">
+    <div class="section-header">
+      <div class="hero-pill" style="align-self: center;">Support Hub</div>
+      <h2 class="section-title">Have Feedback or Issues?</h2>
+      <p class="section-subtitle">We are committed to maintaining a premium player experience. Report issues or suggest new features.</p>
+    </div>
+
+    <div class="feedback-grid">
+      <!-- Card 1: Features -->
+      <div class="glass-panel feedback-card">
+        <h3 class="feedback-card-title">
+          <i data-lucide="message-square"></i>
+          Feature Suggestions
+        </h3>
+        <p class="feedback-card-desc">
+          Want a new functionality added to the player? Suggest enhancements directly to our development board.
+        </p>
+        <div class="feedback-list">
+          <div class="feedback-list-item">
+            <i data-lucide="check" style="width:14px; height:14px;"></i>
+            <span>Suggest user interface details</span>
+          </div>
+          <div class="feedback-list-item">
+            <i data-lucide="check" style="width:14px; height:14px;"></i>
+            <span>Propose decoder extensions or codec suggestions</span>
+          </div>
+        </div>
+        <a href="https://github.com/sarvacapitalin/sarva-tv-feedback/issues/new?title=[Feature%20Request]%20Describe%20your%20feature" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="margin-top:auto; align-self:flex-start;">Submit Feature Request</a>
+      </div>
+
+      <!-- Card 2: Reporting Issues -->
+      <div class="glass-panel feedback-card">
+        <h3 class="feedback-card-title">
+          <i data-lucide="alert-triangle" style="color:var(--danger);"></i>
+          Report Playback Issues
+        </h3>
+        <p class="feedback-card-desc">
+          Encountering crashes, stream lag, or layout issues? File an issue report so we can patch them immediately.
+        </p>
+        <div class="feedback-list">
+          <div class="feedback-list-item">
+            <i data-lucide="check" style="width:14px; height:14px;"></i>
+            <span>File layout bugs for specific TV/Mobile models</span>
+          </div>
+          <div class="feedback-list-item">
+            <i data-lucide="check" style="width:14px; height:14px;"></i>
+            <span>Report MMKV database cache errors</span>
+          </div>
+        </div>
+        <div style="display:flex; gap:12px; margin-top:auto; flex-wrap:wrap;">
+          <a href="https://github.com/sarvacapitalin/sarva-tv-feedback/issues/new?title=[Bug]%20Describe%20your%20issue" target="_blank" rel="noopener noreferrer" class="btn btn-primary">File Bug on GitHub</a>
+          <a href="mailto:contact@sarvacapital.in?subject=Sarva%20TV%20Bug%20Report&body=Device%20Model%3A%0AOS%20Version%3A%0AIssue%20Details%3A" class="btn btn-secondary">Email Support Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo-col">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <i data-lucide="play" fill="currentColor"></i>
+            </div>
+            Sarva <span>TV</span>
+          </a>
+          <p class="footer-logo-desc">
+            Sarva TV is a premium, general-purpose client-only media player shell for user-configured playlist streams.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <!-- App Pages -->
+          <div class="footer-links-group">
+            <span class="footer-links-title">Product</span>
+            <ul class="footer-links">
+              <li><a href="#features" class="footer-link">Features</a></li>
+              <li><a href="#how-it-works" class="footer-link">Walkthrough</a></li>
+              <li><a href="#sandbox" class="footer-link">Sandbox Player</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal Pages -->
+          <div class="footer-links-group">
+            <span class="footer-links-title">Legal & compliance</span>
+            <ul class="footer-links">
+              <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+              <li><a href="dmca.html" class="footer-link">DMCA Copyrights</a></li>
+              <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Sarva Capital. All rights reserved.</span>
+        <span>Linked to <a href="https://sarvacapital.in" target="_blank" rel="noopener noreferrer" style="color:var(--text-secondary); text-decoration:none;">sarvacapital.in</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
