@@ -267,4 +267,36 @@ document.addEventListener('DOMContentLoaded', () => {
       loadStream(demoStreams.test);
     }
   }
+
+  // --- Secure Email Obfuscation against Scrapers ---
+  const emailLinks = document.querySelectorAll('.secure-email');
+  emailLinks.forEach(link => {
+    const user = link.getAttribute('data-email-user');
+    const domain = link.getAttribute('data-email-domain');
+    const subject = link.getAttribute('data-email-subject') || '';
+    const body = link.getAttribute('data-email-body') || '';
+    
+    if (user && domain) {
+      const email = `${user}@${domain}`;
+      
+      // Decrypt mailto URL
+      let mailtoUrl = `mailto:${email}`;
+      const params = [];
+      if (subject) params.push(`subject=${encodeURIComponent(subject)}`);
+      if (body) params.push(`body=${encodeURIComponent(body)}`);
+      if (params.length > 0) mailtoUrl += `?${params.join('&')}`;
+      
+      const activateLink = () => {
+        link.setAttribute('href', mailtoUrl);
+        // Swap obfuscated display text with real email
+        if (link.textContent.includes('[at]') || link.textContent === 'Contact Support') {
+          link.textContent = email;
+        }
+      };
+      
+      link.addEventListener('mouseenter', activateLink);
+      link.addEventListener('focus', activateLink);
+      link.addEventListener('click', activateLink);
+    }
+  });
 });
