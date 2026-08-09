@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy - Sarva TV</title>
-  <meta name="description" content="Privacy Policy for Sarva TV - IPTV Player. Learn about our strict zero data collection policy.">
+  <meta name="description" content="Privacy Policy for Sarva TV. Learn about our local-first storage, consent-gated analytics, and Play Integrity security verification.">
   <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-  <!-- Glow Background Orbs -->
+  <!-- Dynamic Background Orbs -->
   <div class="glow-orb orb-1"></div>
   <div class="glow-orb orb-2"></div>
 
@@ -21,74 +22,103 @@
   <header class="navbar scrolled" id="navbar">
     <div class="container">
       <a href="index.html" class="logo">
-        <div class="logo-icon">
-          <i data-lucide="play" fill="currentColor"></i>
+        <div class="logo-badge">
+          <img src="assets/app-icon.png" alt="Sarva TV Logo">
         </div>
         Sarva <span>TV</span>
       </a>
-      <a href="index.html" class="btn btn-accent" style="padding: 10px 20px; font-size: 14px;">Back to Home</a>
+      <a href="index.html" class="btn btn-secondary" style="padding: 8px 18px; font-size: 13px;">Back to Home</a>
     </div>
   </header>
 
-  <!-- Main Legal Container -->
-  <main class="legal-page">
-    <div class="container">
-      <a href="index.html" class="back-home">
-        <i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i>
-        Back to Home
-      </a>
+  <!-- Legal Document Container -->
+  <main style="padding: 140px 0 80px;">
+    <div class="container" style="max-width: 860px;">
       
-      <article class="glass-panel legal-card">
-        <header class="legal-header">
-          <h1 class="legal-title">Privacy Policy for Sarva TV</h1>
-          <div class="legal-date">Last Updated: June 21, 2026</div>
-        </header>
+      <div class="glass-panel" style="padding: 48px;">
+        <div class="badge-pill" style="margin-bottom: 12px;">
+          <i data-lucide="shield"></i>
+          <span>Official Legal Document</span>
+        </div>
+        <h1 style="font-size: 36px; margin-bottom: 8px;">Privacy Policy for Sarva TV</h1>
+        <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 32px; border-bottom: 1px solid var(--glass-border); padding-bottom: 20px;">
+          <strong>Last Updated:</strong> July 31, 2026 &bull; Sarva Capital
+        </p>
 
-        <section class="legal-body" style="padding:0;">
-          <p>Sarva TV ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information in the Sarva TV mobile and TV applications (the "App").</p>
-          
-          <h2>1. Zero Data Collection</h2>
-          <p>Sarva TV is a <strong>local-only media player client</strong>. We do not collect, store, track, or share any personal data, usage metrics, or search histories.</p>
-          <ul>
-            <li><strong>No Personal Information:</strong> You do not need to create an account, register, or provide any personal details (such as your name, email, or phone number) to use the App.</li>
-            <li><strong>No Tracking:</strong> We do not use third-party tracking pixels, analytics SDKs, or advertising identifiers. We do not monitor what channels you watch, when you watch them, or how long you use the App.</li>
-            <li><strong>No Location Permissions:</strong> The App does not request GPS or location permissions. Regional default sorting is estimated purely offline using local device locale/timezone configurations.</li>
-          </ul>
+        <div style="font-size: 15px; color: var(--text-main); line-height: 1.8; display: flex; flex-direction: column; gap: 24px;">
+          <p>
+            Sarva TV ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how information is handled in the Sarva TV mobile and TV applications (the "App").
+          </p>
 
-          <h2>2. Local-Only Storage</h2>
-          <p>All configuration settings, favorite channels, custom playlists, and cached stream indices are stored <strong>locally on your device</strong> using secure local storage (local database / secure memory key-value stores).</p>
-          <ul>
-            <li>This data never leaves your device and is never transmitted to us or any third-party servers.</li>
-            <li>You can delete all local data at any time by clearing the App's storage in your device settings or by uninstalling the App.</li>
-          </ul>
+          <div style="border-top: 1px solid var(--glass-border); padding-top: 20px;">
+            <h2 style="font-size: 22px; color: var(--text-main); margin-bottom: 12px;">1. Local-First Data Storage & Playlists</h2>
+            <p style="color: var(--text-muted);">
+              Sarva TV operates primarily as a local media player client:
+            </p>
+            <ul style="color: var(--text-muted); padding-left: 20px; margin-top: 8px; display: flex; flex-direction: column; gap: 8px;">
+              <li><strong>User-Provided Content:</strong> The App does not host, preload, or distribute any streaming media. All M3U playlists, URLs, and streaming credentials you load are stored <strong>locally on your device</strong> in secure encrypted storage or local databases.</li>
+              <li><strong>No Remote Sync of Playlists:</strong> Your personal playlist links and favorites never leave your device and are never transmitted to our servers.</li>
+            </ul>
+          </div>
 
-          <h2>3. Third-Party Links and Streams</h2>
-          <p>The App allows you to import third-party playlist files (M3U) and stream video content from external URLs.</p>
-          <ul>
-            <li>Sarva TV does not host, control, or own any streaming content.</li>
-            <li>When you play a stream, your device connects directly to the third-party server hosting that stream. These external servers may log your IP address or collect standard network connection data.</li>
-            <li>We are not responsible for the privacy practices of third-party streaming hosts. Please review the privacy policies of any third-party streams you load.</li>
-          </ul>
+          <div style="border-top: 1px solid var(--glass-border); padding-top: 20px;">
+            <h2 style="font-size: 22px; color: var(--text-main); margin-bottom: 12px;">2. Consent-Gated Analytics & Diagnostics</h2>
+            <p style="color: var(--text-muted);">
+              To help us maintain stability, fix crashes, eliminate buffering stalls, and improve performance, Sarva TV can collect anonymous usage metrics, crash reports, and performance traces via <strong>Google Firebase</strong> (Analytics, Crashlytics, and Performance Monitoring).
+            </p>
+            <ul style="color: var(--text-muted); padding-left: 20px; margin-top: 8px; display: flex; flex-direction: column; gap: 8px;">
+              <li><strong>Explicit Consent Required:</strong> Data collection is <strong>disabled by default</strong>. Firebase SDK data collection does not occur unless you explicitly grant consent during first-run setup.</li>
+              <li><strong>Right to Withdraw:</strong> You can change your preference at any time in the app <strong>Settings &gt; Privacy &amp; Diagnostics</strong> by toggling analytics collection on or off.</li>
+              <li><strong>What is Collected (when consented):</strong> Anonymous app performance metrics, time-to-first-frame (TTFF) load times, playback error codes, and crash stack traces. <strong>We never collect channel names, watch histories, search queries, or personal identifying information.</strong></li>
+            </ul>
+          </div>
 
-          <h2>4. Contact Us</h2>
-          <p>If you have any questions or feedback regarding this Privacy Policy, please contact us at:</p>
-          <ul>
-            <li><strong>Email:</strong> <a href="#" class="secure-email" data-email-user="contact" data-email-domain="sarvacapital.in" style="color:var(--accent); text-decoration:none;">contact [at] sarvacapital.in</a></li>
-            <li><strong>GitHub Support:</strong> <a href="https://github.com/sarvacapitalin/sarva-tv-feedback" target="_blank" rel="noopener noreferrer" style="color:var(--accent); text-decoration:none;">github.com/sarvacapitalin/sarva-tv-feedback</a></li>
-          </ul>
-        </section>
-      </article>
+          <div style="border-top: 1px solid var(--glass-border); padding-top: 20px;">
+            <h2 style="font-size: 22px; color: var(--text-main); margin-bottom: 12px;">3. Security & Anti-Abuse Verification (Play Integrity)</h2>
+            <p style="color: var(--text-muted);">
+              To protect the app ecosystem against unauthorized tampering and fake clients, Sarva TV uses the <strong>Google Play Integrity API</strong>.
+            </p>
+            <ul style="color: var(--text-muted); padding-left: 20px; margin-top: 8px; display: flex; flex-direction: column; gap: 8px;">
+              <li><strong>Channel Request Hashing:</strong> When loading a stream, the App evaluates device integrity. A one-way SHA-256 hash of the channel ID is bound to the integrity token and verified via a secure Cloudflare Worker backend and Firebase Cloud Function.</li>
+              <li><strong>Telemetry Logging:</strong> Decoded integrity verdicts are logged in a secure database for security monitoring. These logs contain device recognition verdicts and hashed request identifiers, exempt from consent requirements as permitted under Google Play User Data policies for security and anti-fraud purposes.</li>
+            </ul>
+          </div>
+
+          <div style="border-top: 1px solid var(--glass-border); padding-top: 20px;">
+            <h2 style="font-size: 22px; color: var(--text-main); margin-bottom: 12px;">4. Third-Party Streams</h2>
+            <p style="color: var(--text-muted);">
+              When you play a stream, your device connects <strong>directly</strong> to the third-party server hosting that stream. External streaming providers may log your IP address or collect connection data independently. Sarva TV is not responsible for the privacy practices of external stream hosts.
+            </p>
+          </div>
+
+          <div style="border-top: 1px solid var(--glass-border); padding-top: 20px;">
+            <h2 style="font-size: 22px; color: var(--text-main); margin-bottom: 12px;">5. Contact Us</h2>
+            <p style="color: var(--text-muted);">
+              If you have any questions or feedback regarding this Privacy Policy, please contact us at:
+            </p>
+            <ul style="color: var(--text-muted); padding-left: 20px; margin-top: 8px;">
+              <li><strong>Email:</strong> <a href="mailto:contact@sarvacapital.in" style="color: var(--primary);">contact@sarvacapital.in</a></li>
+              <li><strong>GitHub Issues:</strong> <a href="https://github.com/sarvacapitalin/sarva-tv-feedback/issues" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">sarva-tv-feedback/issues</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
     </div>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container" style="text-align: center; color: var(--text-muted); font-size: 13px;">
-      <p>&copy; 2026 Sarva Capital. All rights reserved.</p>
-      <p style="margin-top: 8px;">Sarva TV acts purely as a player/directory of user-provided public streams.</p>
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: 0;">
+        <span>&copy; 2026 Sarva Capital. All rights reserved.</span>
+        <a href="index.html" style="color: var(--text-muted); text-decoration: none;">Back to Sarva TV Home</a>
+      </div>
     </div>
   </footer>
 
-  <script src="index.js"></script>
+  <script>
+    if (window.lucide) { lucide.createIcons(); }
+  </script>
 </body>
 </html>
