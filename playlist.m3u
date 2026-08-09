@@ -1,0 +1,47 @@
+#EXTM3U url-tvg="https://sarvatv.sarvacapital.in/epg.xml" m3u-name="Sarva TV Official Playlist"
+
+# === LIVE TV CHANNELS ===
+
+#EXTINF:-1 tvg-id="news_1" tvg-name="Sarva News" tvg-logo="https://sarvatv.sarvacapital.in/assets/app_icon_512.png" group-title="News & Info",Sarva News 24/7
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+
+#EXTINF:-1 tvg-id="news_2" tvg-name="Global News" tvg-logo="https://picsum.photos/id/101/200/200" group-title="News & Info",Global News Network
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
+
+#EXTINF:-1 tvg-id="ent_1" tvg-name="Sarva Drama" tvg-logo="https://picsum.photos/id/102/200/200" group-title="Entertainment",Sarva Drama HD
+https://playertest.longtailvideo.com/adaptive/bipbop/bipbop.m3u8
+
+#EXTINF:-1 tvg-id="ent_2" tvg-name="Cosmos Sci-Fi" tvg-logo="https://picsum.photos/id/108/200/200" group-title="Entertainment",Cosmos Sci-Fi
+https://d2zihajmogu5jn.cloudfront.net/bipbop/bipbop.m3u8
+
+#EXTINF:-1 tvg-id="movies_1" tvg-name="Sarva Movies" tvg-logo="https://picsum.photos/id/103/200/200" group-title="Movies",Sarva Movies 4K
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
+
+#EXTINF:-1 tvg-id="movies_2" tvg-name="Classic Hits" tvg-logo="https://picsum.photos/id/109/200/200" group-title="Movies",Classic Hits TV
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+
+#EXTINF:-1 tvg-id="sports_1" tvg-name="Sarva Sports" tvg-logo="https://picsum.photos/id/104/200/200" group-title="Sports",Sarva Sports Live
+https://playertest.longtailvideo.com/adaptive/bipbop/bipbop.m3u8
+
+#EXTINF:-1 tvg-id="sports_2" tvg-name="Motorsport 24" tvg-logo="https://picsum.photos/id/110/200/200" group-title="Sports",Motorsport 24
+https://d2zihajmogu5jn.cloudfront.net/bipbop/bipbop.m3u8
+
+#EXTINF:-1 tvg-id="music_1" tvg-name="Vedic Waves" tvg-logo="https://picsum.photos/id/111/200/200" group-title="Music",Vedic Waves TV
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+
+#EXTINF:-1 tvg-id="music_2" tvg-name="Sarva Music" tvg-logo="https://picsum.photos/id/106/200/200" group-title="Music",Sarva Music HD
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
+
+# === VOD MOVIES & SERIES ===
+
+#EXTINF:-1 tvg-id="vod_1" tvg-name="Big Buck Bunny" tvg-logo="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500&auto=format&fit=crop&q=80" group-title="VOD Movies",Big Buck Bunny (2008)
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+
+#EXTINF:-1 tvg-id="vod_2" tvg-name="Tears of Steel" tvg-logo="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=500&auto=format&fit=crop&q=80" group-title="VOD Movies",Tears of Steel (2012)
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
+
+#EXTINF:-1 tvg-id="vod_3" tvg-name="Elephant's Dream" tvg-logo="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500&auto=format&fit=crop&q=80" group-title="VOD Movies",Elephant's Dream
+https://playertest.longtailvideo.com/adaptive/bipbop/bipbop.m3u8
+
+#EXTINF:-1 tvg-id="vod_4" tvg-name="Sintel Sci-Fi" tvg-logo="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=500&auto=format&fit=crop&q=80" group-title="VOD Series",Sintel (Season 1)
+https://d2zihajmogu5jn.cloudfront.net/bipbop/bipbop.m3u8
