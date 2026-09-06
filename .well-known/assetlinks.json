@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "in.sarvacapital.sarvatv",
+      "sha256_cert_fingerprints": [
+        "13:94:17:46:37:E8:8C:6E:63:64:6F:27:C5:6F:67:CC:44:45:05:6F:45:E0:76:C6:03:79:FF:30:03:B3:F0:A7",
+        "05:EB:67:18:43:AB:73:4D:96:51:5F:F5:77:C4:21:7B:8E:2B:75:EB:93:F5:41:32:DA:21:5F:B0:D8:59:1D:C4"
+      ]
+    }
+  }
+]
